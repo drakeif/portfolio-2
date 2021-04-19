@@ -138,7 +138,6 @@ p {
         right: -10%;
     }
 }
-
 .point {
     display: block;
     width: 30px;
@@ -146,7 +145,7 @@ p {
     background: $accent;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     position: absolute;
-    top: 50%;
+    bottom: 3%;
     left: 1%;
     cursor: pointer;
     transition: .1s linear;
