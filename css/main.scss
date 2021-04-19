@@ -210,6 +210,10 @@ p {
         width: 35px;
         height: 15px;
         z-index: 10;
+        @include point(501) {
+            top: -40px;
+            right:0;
+        }
         span {
             display: block;
             background: $wh;

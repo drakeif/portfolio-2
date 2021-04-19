@@ -307,6 +307,10 @@ p {
     width: 35px;
     height: 15px;
     z-index: 10; }
+    @media only screen and (max-width: 501px) {
+      .modal__close {
+        top: -40px;
+        right: 0; } }
     .modal__close span {
       display: block;
       background: #ffffff;
