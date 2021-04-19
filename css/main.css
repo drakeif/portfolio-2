@@ -245,10 +245,19 @@ p {
        object-position: right;
     -webkit-transition: 1s linear;
     transition: 1s linear; }
+  .point p {
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    font-size: 22px; }
   .point:hover {
     width: 300px;
     height: 200px; }
     .point:hover img {
+      display: block; }
+    .point:hover p {
       display: block; }
 
 @-webkit-keyframes point-left {

@@ -157,11 +157,22 @@ p {
         object-position: right;
         transition: 1s linear;
     }
+    p {
+        display: none;
+        color: $wh;
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        font-size: 22px;
+    }
     &:hover {
         width: 300px;
         height: 200px;
         img {
             display: block;            
+        }
+        p {
+            display: block;
         }
     }
 }
