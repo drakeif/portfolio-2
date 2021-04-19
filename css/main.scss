@@ -85,8 +85,8 @@ p {
         @include point(769) {
             display: block;
             position: absolute;
-            top: 15%;
-            left: 10%;
+            top: 10%;
+            left: 5%;
             width: 120px;
             animation: circle-animate-menu linear infinite alternate 15s;
         }

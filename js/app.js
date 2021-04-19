@@ -35,3 +35,17 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   nav.classList.toggle('active');
 });
+
+// LANG
+const ua = document.getElementById('ua'),
+      en = document.getElementById('en');
+
+ua.addEventListener('click', (e) => {
+  en.classList.remove('active');
+  e.target.classList.add('active');
+});
+
+en.addEventListener('click', (e) => {
+  ua.classList.remove('active');
+  e.target.classList.add('active');
+});

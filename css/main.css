@@ -144,8 +144,8 @@ p {
       .circle-menu {
         display: block;
         position: absolute;
-        top: 15%;
-        left: 10%;
+        top: 10%;
+        left: 5%;
         width: 120px;
         -webkit-animation: circle-animate-menu linear infinite alternate 15s;
                 animation: circle-animate-menu linear infinite alternate 15s; } }
@@ -425,6 +425,9 @@ p {
             transform: translateY(0); } }
 .header {
   padding: 30px 0 0 0; }
+  @media only screen and (max-width: 769px) {
+    .header {
+      padding: 20px 0 0 0; } }
   .header__inner {
     padding: 20px;
     background-color: #ffffff;
@@ -483,7 +486,7 @@ p {
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end;
-      row-gap: 25px;
+      row-gap: 15px;
       padding: 20px 35px 20px 0;
       position: absolute;
       top: 80px;
@@ -496,7 +499,7 @@ p {
       -webkit-animation: burger-menu .5s ease-out;
               animation: burger-menu .5s ease-out; }
       .header__nav.active a {
-        font-size: 22px; }
+        font-size: 18px; }
       @media only screen and (min-width: 501px) {
         .header__nav.active {
           top: 120px; } }
@@ -520,6 +523,9 @@ p {
     height: 20px;
     position: relative;
     margin-left: 30px; }
+    @media only screen and (max-width: 501px) {
+      .header__burger {
+        margin-left: 15px; } }
     .header__burger span {
       width: 100%;
       height: 1px;
@@ -557,6 +563,9 @@ p {
     .header--portfolio:hover {
       color: #282828 !important;
       background-color: transparent; }
+    @media only screen and (max-width: 769px) {
+      .header--portfolio {
+        padding: 7px 15px; } }
   .header__lang {
     margin-left: auto; }
     .header__lang button {
@@ -573,12 +582,13 @@ p {
       transition: color .2s linear; }
       @media only screen and (max-width: 501px) {
         .header__lang button {
-          font-size: 14px; } }
+          font-size: 14px;
+          margin-right: 0; } }
       .header__lang button:last-child {
         margin-right: 0; }
       .header__lang button:hover {
         color: #f11f6e; }
-    .header__lang--active {
+    .header__lang.active {
       color: #f11f6e !important; }
 
 .home {
