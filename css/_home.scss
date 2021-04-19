@@ -38,11 +38,11 @@
             margin-bottom: 50px;
             @include point(769) {
                 font-size: 18px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
             }
             @include point(501) {
                 font-size: 16px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
             span {
                 color: $accent;
@@ -74,6 +74,7 @@
             cursor: pointer;
             transition: .2s linear;
             @include point(501) {
+                padding: 10px 25px;
                 font-size: 14px;
             }
             &:hover, &:focus {

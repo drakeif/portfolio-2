@@ -667,11 +667,11 @@ p {
     @media only screen and (max-width: 769px) {
       .home__about p {
         font-size: 18px;
-        margin-bottom: 40px; } }
+        margin-bottom: 30px; } }
     @media only screen and (max-width: 501px) {
       .home__about p {
         font-size: 16px;
-        margin-bottom: 30px; } }
+        margin-bottom: 20px; } }
     .home__about p span {
       color: #f11f6e;
       font-weight: 400; }
@@ -711,6 +711,7 @@ p {
       transition: .2s linear; }
       @media only screen and (max-width: 501px) {
         .home__contact button {
+          padding: 10px 25px;
           font-size: 14px; } }
       .home__contact button:hover, .home__contact button:focus {
         color: #ffffff;
