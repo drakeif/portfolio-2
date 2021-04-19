@@ -85,6 +85,7 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
+  min-width: 320px;
   min-height: 100vh; }
 
 img {
@@ -135,7 +136,8 @@ p {
       right: -5%; } }
   @media only screen and (max-width: 500px) {
     .circle {
-      display: none; } }
+      width: 250px;
+      right: -10%; } }
   .circle-menu {
     display: none; }
     @media only screen and (max-width: 769px) {
@@ -216,7 +218,8 @@ p {
       right: -5%; } }
   @media only screen and (max-width: 500px) {
     .me {
-      display: none; } }
+      width: 200px;
+      right: -10%; } }
 
 .point {
   display: block;

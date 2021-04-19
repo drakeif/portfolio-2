@@ -28,6 +28,7 @@ body {
 .wrapper {
     position: relative;
     overflow: hidden;
+    min-width: 320px;
     min-height: 100vh;
 }
 img {
@@ -76,7 +77,8 @@ p {
         right: -5%;
     }
     @include point(500) {
-        display: none;
+        width: 250px;
+        right: -10%;
     }
     &-menu {
         display: none;
@@ -132,7 +134,8 @@ p {
         right: -5%;
     }
     @include point(500) {
-        display: none;
+        width: 200px;
+        right: -10%;
     }
 }
 
