@@ -1,0 +1,125 @@
+.home {
+    padding: 200px 0 0 0;
+    @include point(769) {
+        padding: 100px 0 0 0;
+    }
+    @include point(501) {
+        padding: 50px 0 0 0;
+    }
+    &__about {
+        h4 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            @include point(501) {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+        h1 {
+            min-height: 60px;
+            margin-bottom: 20px;
+            width: 800px;
+            @include point(769) {
+                font-size: 40px;
+                min-height: 72px;
+                width: 500px;
+            }
+            @include point(501) {
+                font-size: 30px;
+                margin-bottom: 10px;
+                width: 300px;
+            }
+            span {
+                color: $accent;
+            }
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 50px;
+            @include point(769) {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+            @include point(501) {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            span {
+                color: $accent;
+                font-weight: 400;
+            }
+        }
+    }
+    &__contact {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin-bottom: auto;
+        @include point(769) { 
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 15px;
+        }
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid $accent;
+            border-radius: 10px;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+            color: inherit;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: .2s linear;
+            @include point(501) {
+                font-size: 14px;
+            }
+            &:hover, &:focus {
+                color: $wh;
+                background: $accent;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $text;
+            transition: .2s linear;
+            @include point(501) {
+                font-size: 14px;
+            }
+            &:hover, &:focus, &:active {
+                color: $accent;
+            }
+        }
+    }
+    &__social {
+       position: absolute;
+       bottom: 30px;
+
+       display: flex;
+       align-items: center;
+       column-gap: 15px;
+        p {
+           font-weight: 400;
+           @include point(501) {
+            font-size: 14px;
+        }
+        }
+        a {
+            text-decoration: none;
+            color: rgba($second, .5);
+            font-size: 19px;
+            @include point(501) {
+                font-size: 16px;
+            }
+            &:hover .home__social-icon {
+                color: rgba($accent, .7);
+            }
+        }
+        &-icon {
+            vertical-align: middle;
+            transition: .2s linear;
+        }
+    }
+}

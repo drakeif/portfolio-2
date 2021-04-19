@@ -1,0 +1,93 @@
+// MONTSERRAT
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''), 
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-300.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-300.woff2') format('woff2');
+    font-display: swap;     
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), 
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-500.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-500.woff2') format('woff2');
+    font-display: swap;     
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), 
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-700.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-700.woff2') format('woff2');
+    font-display: swap;     
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''), 
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-900.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-900.woff2') format('woff2');
+    font-display: swap;     
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), 
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-regular.woff') format('woff'),
+        url('../fonts/montserrat/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2');
+    font-display: swap;     
+}
+// UBUNTU
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''), 
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-300.woff') format('woff'),
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-300.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), 
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-500.woff') format('woff'),
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-500.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), 
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-700.woff') format('woff'),
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-700.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), 
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-regular.woff') format('woff'),
+        url('../fonts/ubuntu/ubuntu-v15-latin_cyrillic-regular.woff2') format('woff2');
+    font-display: swap;
+}
+// KASHUAN SCRIPT
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/kaushan/kaushan-script-v9-latin-regular.woff') format('woff'),
+        url('../fonts/kaushan/kaushan-script-v9-latin-regular.woff2') format('woff2');
+    font-display: swap;
+}
