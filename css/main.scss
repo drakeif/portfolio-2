@@ -29,7 +29,8 @@ body {
     position: relative;
     overflow: hidden;
     min-width: 320px;
-    min-height: 100vh;
+    min-height: 700px;
+    height: 100vh;
 }
 img {
     display: inline-block;
@@ -75,10 +76,12 @@ p {
     @include point(769) {
         width: 350px;
         right: -5%;
+        bottom: 15%;
     }
     @include point(500) {
         width: 250px;
         right: -10%;
+        bottom: 10%;
     }
     &-menu {
         display: none;
@@ -139,7 +142,7 @@ p {
     }
 }
 .point {
-    display: block;
+    display: none;
     width: 30px;
     height: 30px;
     background: $accent;
@@ -150,6 +153,9 @@ p {
     cursor: pointer;
     transition: .1s linear;
     animation: point-left 1s alternate infinite ease-in-out;
+    @include point(769) {
+        display: block;
+    }
     img {
         height: 100%;
         display: none;

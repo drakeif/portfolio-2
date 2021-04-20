@@ -86,7 +86,8 @@ body {
   position: relative;
   overflow: hidden;
   min-width: 320px;
-  min-height: 100vh; }
+  min-height: 700px;
+  height: 100vh; }
 
 img {
   display: inline-block;
@@ -133,11 +134,13 @@ p {
   @media only screen and (max-width: 769px) {
     .circle {
       width: 350px;
-      right: -5%; } }
+      right: -5%;
+      bottom: 15%; } }
   @media only screen and (max-width: 500px) {
     .circle {
       width: 250px;
-      right: -10%; } }
+      right: -10%;
+      bottom: 10%; } }
   .circle-menu {
     display: none; }
     @media only screen and (max-width: 769px) {
@@ -222,7 +225,7 @@ p {
       right: -10%; } }
 
 .point {
-  display: block;
+  display: none;
   width: 30px;
   height: 30px;
   background: #f11f6e;
@@ -236,6 +239,9 @@ p {
   transition: .1s linear;
   -webkit-animation: point-left 1s alternate infinite ease-in-out;
           animation: point-left 1s alternate infinite ease-in-out; }
+  @media only screen and (max-width: 769px) {
+    .point {
+      display: block; } }
   .point img {
     height: 100%;
     display: none;
