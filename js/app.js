@@ -51,11 +51,11 @@ en.addEventListener('click', (e) => {
 });
 
 // VANTA
-VANTA.CLOUDS({
+/* VANTA.CLOUDS({
   el: "#modal",
   mouseControls: false,
   touchControls: false,
   gyroControls: false,
   minHeight: 500,
   minWidth: 500
-})
+}) */

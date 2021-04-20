@@ -196,9 +196,9 @@ p {
     justify-content: center;
     align-items: center;
     position: fixed;
-    //background: rgba($modal, .9);
+    background: rgba($modal, .9);
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -234,7 +234,7 @@ p {
         }
         span {
             display: block;
-            background: $accent;
+            background: $wh;
             width: 100%;
             height: 1px;
             position: absolute;
@@ -249,7 +249,7 @@ p {
             }
         }
         &:hover span {
-            background: $modal;
+            background: $accent;
             &:nth-child(1) {
                 transform: rotate(55deg)
             }
@@ -334,6 +334,7 @@ p {
             }
             @include point(501) {
                 padding: 5px 10px;
+                font-size: 14px;
             }
         }
         &-contact {
