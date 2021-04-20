@@ -196,11 +196,13 @@ p {
     justify-content: center;
     align-items: center;
     position: fixed;
-    background: rgba($modal, .9);
+    //background: rgba($modal, .9);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     &__order {
         padding: 20px 30px;
         display: flex;
@@ -232,7 +234,7 @@ p {
         }
         span {
             display: block;
-            background: $wh;
+            background: $accent;
             width: 100%;
             height: 1px;
             position: absolute;
@@ -247,7 +249,7 @@ p {
             }
         }
         &:hover span {
-            background: $accent;
+            background: $modal;
             &:nth-child(1) {
                 transform: rotate(55deg)
             }

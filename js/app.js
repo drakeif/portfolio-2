@@ -49,3 +49,13 @@ en.addEventListener('click', (e) => {
   ua.classList.remove('active');
   e.target.classList.add('active');
 });
+
+// VANTA
+VANTA.CLOUDS({
+  el: "#modal",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 500,
+  minWidth: 500
+})
