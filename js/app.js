@@ -59,12 +59,9 @@ en.addEventListener('click', (e) => {
   myWork.innerHTML = 'I am making <span>web-sites</span> and <span>web-design</span>';
 });
 
-// VANTA
-/* VANTA.CLOUDS({
-  el: "#modal",
-  mouseControls: false,
-  touchControls: false,
-  gyroControls: false,
-  minHeight: 500,
-  minWidth: 500
-}) */
+// AUDIO
+function poroh() {
+  var audio = new Audio();
+  audio.src = 'audio/vote.mp3';
+  audio.autoplay = true;
+}
