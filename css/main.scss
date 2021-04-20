@@ -2,6 +2,9 @@
 @import 'vars';
 @import 'media';
 // CORRECT STYLES
+#engName {
+    display: none
+}
 html {
     box-sizing: border-box;
 }
@@ -364,6 +367,9 @@ p {
     to {
         transform: translateY(0)
     }
+}
+#engName {
+    display: none
 }
 // MAIN STYLES
 @import 'header';

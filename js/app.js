@@ -38,16 +38,25 @@ burger.addEventListener('click', () => {
 
 // LANG
 const ua = document.getElementById('ua'),
-      en = document.getElementById('en');
+      en = document.getElementById('en'),
+      myName = document.getElementById('typed'),
+      engName = document.getElementById('engName'),
+      myWork = document.getElementById('mywork');
 
 ua.addEventListener('click', (e) => {
   en.classList.remove('active');
   e.target.classList.add('active');
+  myName.style.display = "block";
+  engName.style.display = "none";
+  myWork.innerHTML = 'Я займаюсь створенням <span>веб-сайтів</span> та <span>дизайном'
 });
 
 en.addEventListener('click', (e) => {
   ua.classList.remove('active');
   e.target.classList.add('active');
+  myName.style.display = "none";
+  engName.style.display = "block";
+  myWork.innerHTML = 'I am making <span>web-sites</span> and <span>web-design</span>';
 });
 
 // VANTA

@@ -19,9 +19,9 @@
                         <span>VOLD-</span><span>Studio</span>
                     </div>
                     <nav class="header__nav" id="nav">
-                        <a href="#!">Головна</a>
-                        <a href="#!">Послуги</a>
-                        <a class="header--portfolio" href="#!">Портфоліо</a>
+                        <a class="lang" key="main" href="#!">Головна</a>
+                        <a class="lang" key="service" href="#!">Послуги</a>
+                        <a class="header--portfolio lang" key="portfolio" href="#!">Портфоліо</a>
                         <img class="circle-menu" src="img/circle.png" alt="circle">
                         <div class="point">
                             <img src="./img/poroh.jpg" alt="poroh">
@@ -29,8 +29,8 @@
                         </div>
                     </nav>
                     <div class="header__lang">
-                        <button class="header__lang active" id="ua">UA</button>
-                        <button class="header__lang" id="en">EN</button>
+                        <button class="header__lang translate active" id="ua">UA</button>
+                        <button class="header__lang translate" id="en">EN</button>
                     </div>
                     <div class="header__burger" id="burger">
                         <span></span>
@@ -45,17 +45,18 @@
             <div class="container">
                 <div class="home__inner">
                     <div class="home__about">
-                        <h4>// Мене звуть</h4>
+                        <h4 class="lang" key="myname">// Мене звуть</h4>
                         <h1 id="typed"></h1>
-                        <p>Я займаюсь створенням <span>веб-сайтів</span> та <span>дизайном</span></p>
+                        <h1 id="engName">Volodymyr <span>Okhlopkov</span></h1>
+                        <p class="lang" id="mywork" key="mywork">Я займаюсь створенням <span>веб-сайтів</span> та <span>дизайном</span></p>
                     </div>
                     <div class="home__contact">
-                        <button id="order">Залишити заявку</button>
+                        <button class="lang" key="order" id="order">Залишити заявку</button>
                         <a href="tel:+380992562073">+38 (099) 256 20 73</a>
                         <a href="mailto:v.ohlopkov100@gmail.com">v.ohlopkov100@gmail.com</a>
                     </div>
                     <div class="home__social">
-                        <p>Я в соц. мережах:</p>
+                        <p class="lang" key="social">Я в соц. мережах:</p>
                         <a href="#!"><i class="fab fa-facebook-square home__social-icon"></i></a>
                         <a href="#!"><i class="fab fa-instagram-square home__social-icon"></i></a>
                         <a href="#!"><i class="fab fa-telegram home__social-icon"></i></a> 
@@ -92,10 +93,13 @@
         </div>
     </div>
     <!-- SCRIPT -->
+    
     <script src="js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/vanta.clouds.min.js"></script>
+    <!-- <script src="js/three.min.js"></script>
+    <script src="js/vanta.clouds.min.js"></script> -->
     <script src="js/app.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
