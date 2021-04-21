@@ -8,6 +8,9 @@
 #orderSendEn {
     display: none;
 }
+.modal__formEn {
+   @include formsEn;
+}
 html {
     box-sizing: border-box;
 }

@@ -11,7 +11,10 @@ const orderOpen = document.getElementById('order'),
       modal = document.getElementById('modal'),
       orderClose = document.getElementById('close'),
       orderSend = document.getElementById('orderSend'),
-      orderSendEn = document.getElementById('orderSendEn');
+      orderSendEn = document.getElementById('orderSendEn'),
+      modalFormUa = document.querySelector('.modal__form'),
+      modalFormEn = document.querySelector('.modal__formEn');
+
 
 orderOpen.addEventListener('click', () => {
   modal.classList.add('active');
@@ -59,6 +62,8 @@ ua.addEventListener('click', (e) => {
   engName.style.display = "none";
   orderSendEn.style.display = "none"
   orderSend.style.display = "block"
+  modalFormUa.style.display = "flex"
+  modalFormEn.style.display = "none"
   myWork.innerHTML = 'Я займаюсь створенням <span>веб-сайтів</span> та <span>дизайном'
 });
 
@@ -69,6 +74,8 @@ en.addEventListener('click', (e) => {
   engName.style.display = "block";
   orderSendEn.style.display = "block"
   orderSend.style.display = "none"
+  modalFormUa.style.display = "none"
+  modalFormEn.style.display = "flex"
   myWork.innerHTML = 'I`m making <span>web-sites</span> and <span>web-design</span>';
 });
 
