@@ -6,20 +6,27 @@ var typed = new Typed('#typed', {
     backSpeed: 50,
   });
 
-// MODAL
+// VARS
 const orderOpen = document.getElementById('order'),
       modal = document.getElementById('modal'),
       orderClose = document.getElementById('close'),
       orderSend = document.getElementById('orderSend'),
       orderSendEn = document.getElementById('orderSendEn'),
       modalFormUa = document.querySelector('.modal__form'),
-      modalFormEn = document.querySelector('.modal__formEn');
+      modalFormEn = document.querySelector('.modal__formEn'),
+      ua = document.getElementById('ua'),
+      en = document.getElementById('en'),
+      myName = document.getElementById('typed'),
+      engName = document.getElementById('engName'),
+      myWork = document.getElementById('mywork');
 
+// MODAL
 orderOpen.addEventListener('click', () => {
   modal.classList.add('active');
   orderSend.innerHTML = 'Залишити заявку'
   orderSendEn.innerHTML = 'Leave a request'
 });
+
 orderClose.addEventListener('click', () => {
   modal.classList.remove('active');
 });
@@ -48,12 +55,6 @@ burger.addEventListener('click', () => {
 });
 
 // LANG
-const ua = document.getElementById('ua'),
-      en = document.getElementById('en'),
-      myName = document.getElementById('typed'),
-      engName = document.getElementById('engName'),
-      myWork = document.getElementById('mywork');
-
 ua.addEventListener('click', (e) => {
   en.classList.remove('active');
   e.target.classList.add('active');
