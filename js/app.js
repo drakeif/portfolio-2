@@ -10,7 +10,10 @@ var typed = new Typed('#typed', {
 const orderOpen = document.getElementById('order'),
       modal = document.getElementById('modal'),
       orderClose = document.getElementById('close'),
-      orderSend = document.getElementById('orderSend');
+      orderSend = document.getElementById('orderSend'),
+      orderSendEn = document.getElementById('orderSendEn'),
+      modalFormUa = document.querySelector('.modal__form'),
+      modalFormEn = document.querySelector('.modal__formEn');
 
 orderOpen.addEventListener('click', () => {
   modal.classList.add('active');
@@ -49,10 +52,7 @@ const ua = document.getElementById('ua'),
       en = document.getElementById('en'),
       myName = document.getElementById('typed'),
       engName = document.getElementById('engName'),
-      myWork = document.getElementById('mywork'),
-      orderSendEn = document.getElementById('orderSendEn'),
-      modalFormUa = document.querySelector('.modal__form'),
-      modalFormEn = document.querySelector('.modal__formEn');
+      myWork = document.getElementById('mywork');
 
 ua.addEventListener('click', (e) => {
   en.classList.remove('active');
