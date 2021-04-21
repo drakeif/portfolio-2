@@ -10,11 +10,13 @@ var typed = new Typed('#typed', {
 const orderOpen = document.getElementById('order'),
       modal = document.getElementById('modal'),
       orderClose = document.getElementById('close'),
-      orderSend = document.getElementById('orderSend');
+      orderSend = document.getElementById('orderSend'),
+      orderSendEn = document.getElementById('orderSendEn');
 
 orderOpen.addEventListener('click', () => {
   modal.classList.add('active');
   orderSend.innerHTML = 'Залишити заявку'
+  orderSendEn.innerHTML = 'Leave a request'
 });
 orderClose.addEventListener('click', () => {
   modal.classList.remove('active');
@@ -22,6 +24,13 @@ orderClose.addEventListener('click', () => {
 
 orderSend.addEventListener('click', function(){
   orderSend.innerHTML = 'Відправляється...'
+  setTimeout(function(){
+    modal.classList.remove('active');
+  }, 2000);
+});
+
+orderSendEn.addEventListener('click', function(){
+  orderSendEn.innerHTML = 'Sending...'
   setTimeout(function(){
     modal.classList.remove('active');
   }, 2000);
@@ -48,6 +57,8 @@ ua.addEventListener('click', (e) => {
   e.target.classList.add('active');
   myName.style.display = "block";
   engName.style.display = "none";
+  orderSendEn.style.display = "none"
+  orderSend.style.display = "block"
   myWork.innerHTML = 'Я займаюсь створенням <span>веб-сайтів</span> та <span>дизайном'
 });
 
@@ -56,7 +67,9 @@ en.addEventListener('click', (e) => {
   e.target.classList.add('active');
   myName.style.display = "none";
   engName.style.display = "block";
-  myWork.innerHTML = 'I am making <span>web-sites</span> and <span>web-design</span>';
+  orderSendEn.style.display = "block"
+  orderSend.style.display = "none"
+  myWork.innerHTML = 'I`m making <span>web-sites</span> and <span>web-design</span>';
 });
 
 // AUDIO
@@ -65,3 +78,7 @@ function poroh() {
   audio.src = 'audio/vote.mp3';
   audio.autoplay = true;
 }
+
+
+
+

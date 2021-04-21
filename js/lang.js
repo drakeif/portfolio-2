@@ -3,9 +3,10 @@ var arrLang = {
       'main': 'Home',
       'service': 'Service',
       'portfolio': 'Portfolio',
-      'myname': '// My name is',
+      'myname': '// My name`s',
       'order': 'Leave a request',
       'social': 'My social networks:',
+      'fillform': 'Fill a form below and i`ll get touch with you soon',
     },
     'ua': {
         'main': 'Головна',
@@ -14,6 +15,7 @@ var arrLang = {
         'myname': '// Мене звуть',
         'order': 'Залишити заявку',
         'social': 'Я в соц. мережах:',
+        'fillform': 'Заповніть форму нище і я зв`яжуся з вами в найблжчий час',
     }
 }
 
