@@ -364,6 +364,7 @@ p {
     }
     &.active {
         display: flex;
+        z-index: 999;
     }
 }
 @keyframes order-up {
@@ -380,3 +381,4 @@ p {
 // MAIN STYLES
 @import 'header';
 @import 'home';
+@import 'service';

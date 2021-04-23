@@ -1,5 +1,5 @@
 .home {
-    padding: 200px 0 0 0;
+    padding: 175px 0 0 0;
     @include point(769) {
         padding: 100px 0 0 0;
     }
@@ -48,6 +48,9 @@
                 color: $accent;
                 font-weight: 400;
             }
+        }
+        &.service {
+            display: none;
         }
     }
     &__contact {

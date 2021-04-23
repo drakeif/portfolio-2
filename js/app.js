@@ -25,10 +25,12 @@ orderOpen.addEventListener('click', () => {
   modal.classList.add('active');
   orderSend.innerHTML = 'Залишити заявку'
   orderSendEn.innerHTML = 'Leave a request'
+  console.log('open');
 });
 
 orderClose.addEventListener('click', () => {
   modal.classList.remove('active');
+  console.log('close');
 });
 
 orderSend.addEventListener('click', function(){

@@ -60,6 +60,7 @@
             width: 100%;
             background: $wh;
             box-shadow: 0 3px 10px rgba($text, .3);
+            z-index: 999;
             animation: burger-menu .5s ease-out;
             a {
                 font-size: 18px;
@@ -83,6 +84,7 @@
         height: 20px;
         position: relative;
         margin-left: 30px;
+        cursor: pointer;
         @include point(501) {
             margin-left: 15px;
         }

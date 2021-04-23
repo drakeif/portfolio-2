@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLD-Studio | Service</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <span>VOLD-</span><span>Studio</span>
+                    </div>
+                    <nav class="header__nav" id="nav">
+                        <a class="lang" key="main" href="index.html">Головна</a>
+                        <a class="lang" key="service" href="service.html">Послуги</a>
+                        <a class="header--portfolio lang" key="portfolio" href="#!">Портфоліо</a>
+                        <img class="circle-menu" src="img/circle.png" alt="circle">
+                        <div class="point" onclick="poroh()">
+                            <img src="./img/poroh.jpg" alt="poroh">
+                            <p>О, Прівєт</p>
+                        </div>
+                    </nav>
+                    <div class="header__lang">
+                        <button class="header__lang translate active" id="ua">UA</button>
+                        <button class="header__lang translate" id="en">EN</button>
+                    </div>
+                    <div class="header__burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HOME -->
+        <div class="home">
+            <div class="container">
+                <div class="home__inner">
+                    <div class="home__about service">
+                        <h1 id="typed"></h1>
+                    </div>
+                    <div class="service">
+                        <h2 class="lang" key="service">Послуги</h2>
+
+                        <div class="service__wrapper">
+
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/design/graphic-designer.svg" alt="design">
+                                            <h3 class="lang" key="item-1">Веб-дизайн</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-1">На кожному етапі створення сайту вебдизайнери послуговуються різними інструментами.</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/front/browser.svg" alt="front end">
+                                            <h3 class="lang" key="item-2">Верстка</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-2">Це процес створення веб-сторінки із попередньо створеного макету дизайну сайту, заздалегідь намальованого за допомогою графічних редакторів</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/back/php.svg" alt="back end">
+                                            <h3 class="lang" key="item-3">Програмування</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-3">Процес проектування, написання, тестування, зневадження і підтримки комп`ютерних програм</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/analytics/analytics.svg" alt="analytics">
+                                            <h3 class="lang" key="item-4">Аналітика</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-4">Це інструмент для збору статистики по сайту і формування звітів, за допомогою яких можна просувати сайт ефективніше</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/ads/tear-off-ads.svg" alt="advertising">
+                                            <h3 class="lang" key="item-5">Реклама</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-5">Онлайн-рекламний сервіс, який дозволяє рекламодавцям конкурувати для відображення коротких рекламних текстів для веб-користувачів</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/lead/contract.svg" alt="lead">
+                                            <h3 class="lang" key="item-6">Супровід</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-6">До переліку робіт, які належать до супроводу сайту відносять роботи, які, передусім, пов`язані з контентом</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/service/consult.svg" alt="service">
+                                            <h3 class="lang" key="item-7">Обслуговування</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-7">Обслуговування сайту включає в себе два основних напрямки по роботі з сайтом: технічна підтримку та супровід сайту</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/domain/domain.svg" alt="domain">
+                                            <h3 class="lang" key="item-8">Домен</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-8">Доменне ім’я або домен — це ім’я сайту. Ви вводите його в адресному рядку веб-переглядача, коли хочете перейти на сайт</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/host/cloud.svg" alt="hosting">
+                                            <h3 class="lang" key="item-9">Хостинг</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-9">Хостинг потрібен, щоб зберігати файли із сайтом у цілодобовому доступі, керувати цими файлами та змінювати їх властивості</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/page/web-page.svg" alt="web page">
+                                            <h3 class="lang" key="item-10">Сайт-візитка</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-10">Невеликий сайт, що зазвичай складається з однієї (або декількох) веб-сторінок та містить основну інформацію про організацію, приватну особу, компанію, товари чи послуги, прайс-листи, контактні дані</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/landing/landing-page.svg" alt="landing page">
+                                            <h3 class="lang" key="item-11">Лендінг</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-11">Односторінковий сайт, який виконує одну певну задачу. Розробники повинні донести чітку думку до відвідувачів, і спонукати їх до здійснення якоїсь певноі дії</p>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="service__item">
+                                        <div class="service__item-title">
+                                            <img src="./img/svg/responsive/responsive.svg" alt="responsive">
+                                            <h3 class="lang" key="item-12">Адаптивність</h3>
+                                        </div>
+                                        <p class="service__item-desc lang" key="item-desc-12">Це сайт з таким дизайном, який однаково добре виглядає на всіх пристроях: ПК і ноутбуках, смартфонах і планшетах</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                    </div>
+
+
+                    <div class="home__contact">
+                        <button class="lang" key="order" id="order">Залишити заявку</button>
+                    </div>
+                    <div class="home__social">
+                        <p class="lang" key="social">Я в соц. мережах:</p>
+                        <a href="https://www.facebook.com/drake.if/" target="_blank"><i class="fab fa-facebook-square home__social-icon"></i></a>
+                        <a href="https://www.instagram.com/drake_if/" target="_blank"><i class="fab fa-instagram-square home__social-icon"></i></a>
+                        <a href="https://t.me/Drake_if" target="_blank"><i class="fab fa-telegram home__social-icon"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal__order">
+            <div class="modal__close" id="close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="modal__connect">
+                <h2 class="lang" key="order">Залишити заявку</h2>
+                <p class="lang" key="fillform">Заповніть форму нище і я зв'яжуся з вами в найблжчий час</p>
+                <form action="/" class="modal__form">
+                    <input type="text" placeholder="Ваше ім'я">
+                    <input type="email" placeholder="Ваша пошта">
+                    <input type="tel" placeholder="Ваш телефон">
+                </form>
+                <form action="/" class="modal__formEn">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your e-mail">
+                    <input type="tel" placeholder="Your phone">
+                </form>
+                <div class="modal__send">
+                    <button id="orderSend">Залишити заявку</button>
+                    <button id="orderSendEn">Leave a request</button>
+                    <div class="modal__send-contact">
+                        <a href="tel:+380992562073">+38 (099) 256 20 73</a>
+                        <a href="mailto:v.ohlopkov100@gmail.com">v.ohlopkov100@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/lang.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
