@@ -753,8 +753,6 @@ p {
     .home__about p span {
       color: #f11f6e;
       font-weight: 400; }
-  .home__about.service {
-    display: none; }
   .home__contact {
     display: -webkit-box;
     display: -ms-flexbox;
