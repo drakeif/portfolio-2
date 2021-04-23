@@ -1,5 +1,7 @@
 var arrLang = {
     'en': {
+      'title': 'VOLD-Studio | Home',
+      'title-2': 'VOLD-Studio | Service',
       'main': 'Home',
       'service': 'Service',
       'portfolio': 'Portfolio',
@@ -33,6 +35,8 @@ var arrLang = {
       'item-desc-12': 'This is a site with a design that looks equally good on all devices: PCs and laptops, smartphones and tablets',
     },
     'ua': {
+        'title': 'VOLD-Studio | Головна',
+        'title-2': 'VOLD-Studio | Послуги',
         'main': 'Головна',
         'service': 'Послуги',
         'portfolio': 'Портфоліо',
