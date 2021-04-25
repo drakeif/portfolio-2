@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="lang" key="title-3">VOLD-Studio | Портфоліо</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <span>VOLD-</span><span>Studio</span>
+                    </div>
+                    <nav class="header__nav" id="nav">
+                        <a class="lang" key="main" href="index.html">Головна</a>
+                        <a class="lang" key="service" href="service.html">Послуги</a>
+                        <a class="header--portfolio lang" key="portfolio" href="portfolio.html">Портфоліо</a>
+                        <img class="circle-menu" src="img/circle.png" alt="circle">
+                        <div class="point" onclick="poroh()">
+                            <img src="./img/poroh.jpg" alt="poroh">
+                            <p>О, Прівєт</p>
+                        </div>
+                    </nav>
+                    <div class="header__lang">
+                        <button class="header__lang translate active" id="ua">UA</button>
+                        <button class="header__lang translate" id="en">EN</button>
+                    </div>
+                    <div class="header__burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HOME / PORTFOLIO -->
+        <div class="home">
+            <div class="container">
+                <div class="home__inner">
+                    <div class="home__about" style="display: none;">
+                        <h4 class="lang" key="myname">// Мене звуть</h4>
+                        <h1 id="typed"></h1>
+                        <h1 id="engName">Volodymyr <span>Okhlopkov</span></h1>
+                        <p class="lang" id="mywork" key="mywork">Я займаюсь створенням <span>веб-сайтів</span> та <span>дизайном</span></p>
+                    </div>
+                    <div class="portfolio">
+                        <h2 class="lang" key="works">Мої роботи</h2>
+                        <div class="swiper-container-lg">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/01.jpg" alt="01">
+                                    <a class="portfolio__link lang"  target="_blank" href="https://zholobailo.com/"><span class="lang" key="project">Сайт проєкта</span> "Zholobailo.com"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/02.jpg" alt="02">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/ZEN/"><span class="lang" key="project">Сайт проєкта</span> "ZEN"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/03.jpg" alt="03">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/stanislawiw/"><span class="lang" key="project">Сайт проєкта</span> "Stanislawiw"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/04.jpg" alt="04">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/Portfolio/"><span class="lang" key="project">Сайт проєкта</span> "/.PORTFOLIO"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/05.jpg" alt="05">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/youtube/"><span class="lang" key="project">Сайт проєкта</span> "YouTube"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/06.jpg" alt="06">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/Agency/"><span class="lang" key="project">Сайт проєкта</span> "Agency"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/07.jpg" alt="07">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/Amazing-Japan/"><span class="lang" key="project">Сайт проєкта</span> "Amazing Japan"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/08.jpg" alt="08">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/Amazing-Japan/"><span class="lang" key="project">Сайт проєкта</span> "Free Landing Page"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/09.jpg" alt="09">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/tour-and-travel/"><span class="lang" key="project">Сайт проєкта</span> "Tour and Travel"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/10.jpg" alt="10">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/vold-studio/"><span class="lang" key="project">Сайт проєкта</span> "VOLD-STUDIO (old)"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/11.jpg" alt="11">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/pizza/"><span class="lang" key="project">Сайт проєкта</span> "PIZZA"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/12.jpg" alt="12">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/the-loop/"><span class="lang" key="project">Сайт проєкта</span> "THE LOOP"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/13.jpg" alt="13">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/blog/"><span class="lang" key="project">Сайт проєкта</span> "BLOG"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/14.jpg" alt="14">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/grid/"><span class="lang" key="project">Сайт проєкта</span> "CSS Grid"</a>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="portfolio__item">
+                                    <img src="./img/works/15.jpg" alt="15">
+                                    <a class="portfolio__link" target="_blank" href="https://drakeif.github.io/wayup/"><span class="lang" key="project">Сайт проєкта</span> "WAY UP"</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                        <div class="portfolio__cubics">
+                            <div class="portfolio__cubics-item"></div>
+                            <div class="portfolio__cubics-item"></div>
+                            <div class="portfolio__cubics-item"></div>
+                        </div>
+                    </div>
+                    <div class="home__contact">
+                        <button class="lang" key="order" id="order">Залишити заявку</button>
+                    </div>
+                    <div class="home__social">
+                        <p class="lang" key="social">Я в соц. мережах:</p>
+                        <a href="https://www.facebook.com/drake.if/" target="_blank"><i class="fab fa-facebook-square home__social-icon"></i></a>
+                        <a href="https://www.instagram.com/drake_if/" target="_blank"><i class="fab fa-instagram-square home__social-icon"></i></a>
+                        <a href="https://t.me/Drake_if" target="_blank"><i class="fab fa-telegram home__social-icon"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal__order">
+            <div class="modal__close" id="close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="modal__connect">
+                <h2 class="lang" key="order">Залишити заявку</h2>
+                <p class="lang" key="fillform">Заповніть форму нище і я зв'яжуся з вами в найблжчий час</p>
+                <form action="/" class="modal__form">
+                    <input type="text" placeholder="Ваше ім'я">
+                    <input type="email" placeholder="Ваша пошта">
+                    <input type="tel" placeholder="Ваш телефон">
+                </form>
+                <form action="/" class="modal__formEn">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your e-mail">
+                    <input type="tel" placeholder="Your phone">
+                </form>
+                <div class="modal__send">
+                    <button id="orderSend">Залишити заявку</button>
+                    <button id="orderSendEn">Leave a request</button>
+                    <div class="modal__send-contact">
+                        <a href="tel:+380992562073">+38 (099) 256 20 73</a>
+                        <a href="mailto:v.ohlopkov100@gmail.com">v.ohlopkov100@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/lang.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

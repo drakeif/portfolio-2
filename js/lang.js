@@ -2,6 +2,7 @@ var arrLang = {
     'en': {
       'title': 'VOLD-Studio | Home',
       'title-2': 'VOLD-Studio | Service',
+      'title-3': 'VOLD-Studio | Portfolio',
       'main': 'Home',
       'service': 'Service',
       'portfolio': 'Portfolio',
@@ -9,6 +10,8 @@ var arrLang = {
       'order': 'Leave a request',
       'social': 'My social networks:',
       'fillform': 'Fill a form below and i`ll get touch with you soon',
+      'project': 'Project of website',
+      'works': 'My works',
       'item-1': 'Web-Design',
       'item-2': 'Front-end',
       'item-3': 'Back-end',
@@ -37,6 +40,7 @@ var arrLang = {
     'ua': {
         'title': 'VOLD-Studio | Головна',
         'title-2': 'VOLD-Studio | Послуги',
+        'title-3': 'VOLD-Studio | Портфоліо',
         'main': 'Головна',
         'service': 'Послуги',
         'portfolio': 'Портфоліо',
@@ -44,6 +48,8 @@ var arrLang = {
         'order': 'Залишити заявку',
         'social': 'Я в соц. мережах:',
         'fillform': 'Заповніть форму нище і я зв`яжуся з вами в найблжчий час',
+        'project': 'Сайт проєкту',
+        'works': 'Мої роботи',
         'item-1': 'Веб-дизайн',
         'item-2': 'Верстка',
         'item-3': 'Програмування',
