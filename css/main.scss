@@ -43,6 +43,9 @@ body {
 }
 .wrapper-lg {
     min-height: 750px;
+    @include point-min(769) {
+        min-height: 900px;
+    }
 }
 img {
     display: inline-block;

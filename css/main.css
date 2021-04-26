@@ -141,6 +141,9 @@ body {
 
 .wrapper-lg {
   min-height: 750px; }
+  @media only screen and (min-width: 769px) {
+    .wrapper-lg {
+      min-height: 900px; } }
 
 img {
   display: inline-block;
