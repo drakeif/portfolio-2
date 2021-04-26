@@ -139,6 +139,9 @@ body {
   min-height: 700px;
   height: 100vh; }
 
+.wrapper-lg {
+  min-height: 750px; }
+
 img {
   display: inline-block;
   max-width: 100%;
