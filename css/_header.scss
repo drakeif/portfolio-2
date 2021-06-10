@@ -5,7 +5,7 @@
     }
     &__inner {
         padding: 20px;
-        background-color: $wh;
+        background-color: $bg;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgba($text, .3);
 
@@ -19,7 +19,7 @@
         font-family: 'Kaushan Script';
         font-size: 28px;
         margin-right: 60px;
-        cursor: pointer;
+        cursor: default;
         @include point(501) {
             font-size: 18px;
             white-space: nowrap;
@@ -58,7 +58,7 @@
             left: 0;
             right: 0;
             width: 100%;
-            background: $wh;
+            background: $bg;
             box-shadow: 0 3px 10px rgba($text, .3);
             z-index: 999;
             animation: burger-menu .5s ease-out;
@@ -123,7 +123,7 @@
     }
     &--portfolio {
         padding: 9px 18px;
-        border-radius: 50px;
+        border-radius: 10px;
         color: $wh !important;
         background-color: $accent;
         border: 1px solid $accent;

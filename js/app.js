@@ -80,12 +80,12 @@ en.addEventListener('click', (e) => {
 });
 
 // AUDIO
-function poroh() {
+/* function poroh() {
   var audio = new Audio();
   audio.src = 'audio/vote.mp3';
   audio.autoplay = true;
 }
-
+ */
 
 
 
