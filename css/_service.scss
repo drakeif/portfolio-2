@@ -25,7 +25,7 @@
         height: 190px;
         border-radius: 10px;
         background: $bg;
-        box-shadow: 0 3px 10px rgba($text, .3);
+        box-shadow: 0 3px 5px rgba($second, .3);
         overflow: hidden;
         cursor: pointer;
         transition: .2s linear;
@@ -63,6 +63,7 @@
 }
 .swiper-container {
     padding: 10px !important;
+    overflow: hidden !important;
 }
 .swiper-pagination {
     position: relative !important;

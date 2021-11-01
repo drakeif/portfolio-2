@@ -71,22 +71,22 @@
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  max-width: 100%; }
   .modal__formEn input {
     padding: 10px 20px;
     border: 1px solid rgba(149, 149, 149, 0.3);
     outline: none;
     border-radius: 5px;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #e5493a; }
-    @media only screen and (max-width: 769px) {
-      .modal__formEn input {
-        max-width: 340px; } }
-    @media only screen and (max-width: 501px) {
-      .modal__formEn input {
-        max-width: 240px; } }
+    color: #e5493a;
+    -webkit-transition: .2s linear;
+    transition: .2s linear; }
+    .modal__formEn input:hover, .modal__formEn input:focus {
+      border: 1px solid #e5493a; }
     .modal__formEn input::-webkit-input-placeholder {
       font-family: 'Ubuntu', sans-serif;
       font-size: 13px;
@@ -353,7 +353,7 @@ p {
   right: 0;
   bottom: 0; }
   .modal__order {
-    padding: 20px 30px;
+    padding: 30px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -372,15 +372,17 @@ p {
         height: 430px; } }
     @media only screen and (max-width: 501px) {
       .modal__order {
+        padding: 20px 20px;
         width: 300px;
         height: 360px; } }
   .modal__close {
     position: absolute;
-    top: -25px;
+    top: -35px;
     right: -50px;
     width: 35px;
-    height: 15px;
-    z-index: 10; }
+    height: 35px;
+    z-index: 10;
+    cursor: pointer; }
     @media only screen and (max-width: 501px) {
       .modal__close {
         top: -40px;
@@ -392,7 +394,8 @@ p {
       height: 1px;
       position: absolute;
       -webkit-transition: .2s linear;
-      transition: .2s linear; }
+      transition: .2s linear;
+      pointer-events: none; }
       .modal__close span:nth-child(1) {
         top: 50%;
         -webkit-transform: rotate(45deg);
@@ -416,17 +419,21 @@ p {
       font-weight: 400;
       color: #e5493a;
       margin-bottom: 20px; }
+      @media only screen and (max-width: 769px) {
+        .modal__connect h2 {
+          font-size: 18px;
+          margin-bottom: 15px; } }
       @media only screen and (max-width: 501px) {
         .modal__connect h2 {
           font-size: 18px;
           margin-bottom: 10px; } }
     .modal__connect p {
       font-weight: 400;
-      margin-bottom: 25px; }
-      @media only screen and (max-width: 501px) {
+      margin-bottom: 30px; }
+      @media only screen and (max-width: 769px) {
         .modal__connect p {
           font-size: 14px;
-          margin-bottom: 15px; } }
+          margin-bottom: 20px; } }
   .modal__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -436,12 +443,14 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 10px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 100%; }
     .modal__form input {
       padding: 10px 20px;
       border: 1px solid #959595;
       outline: none;
       border-radius: 5px;
+      width: 100%;
       font-family: 'Montserrat', sans-serif;
       font-size: 14px;
       font-weight: 400;
@@ -450,12 +459,6 @@ p {
       transition: .2s linear; }
       .modal__form input:hover, .modal__form input:focus {
         border: 1px solid #e5493a; }
-      @media only screen and (max-width: 769px) {
-        .modal__form input {
-          max-width: 340px; } }
-      @media only screen and (max-width: 501px) {
-        .modal__form input {
-          max-width: 240px; } }
       .modal__form input::-webkit-input-placeholder {
         font-family: 'Ubuntu', sans-serif;
         font-size: 13px;
@@ -495,6 +498,7 @@ p {
         row-gap: 10px; } }
     .modal__send button {
       padding: 15px 30px;
+      width: 220px;
       background: transparent;
       border: 2px solid #e5493a;
       border-radius: 5px;
@@ -509,6 +513,10 @@ p {
       .modal__send button:hover, .modal__send button:focus {
         color: #ffffff;
         background: #e5493a; }
+      @media only screen and (max-width: 769px) {
+        .modal__send button {
+          padding: 10px 15px;
+          width: 100%; } }
       @media only screen and (max-width: 501px) {
         .modal__send button {
           padding: 5px 10px;
@@ -558,17 +566,33 @@ p {
     padding: 20px;
     background-color: #252525;
     border-radius: 10px;
-    -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
-            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 3px 10px rgba(149, 149, 149, 0.3);
+            box-shadow: 0 3px 10px rgba(149, 149, 149, 0.3);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-animation: menu-color 3s infinite alternate linear;
+            animation: menu-color 3s infinite alternate linear; }
     @media only screen and (max-width: 501px) {
       .header__inner {
         padding: 10px; } }
+@-webkit-keyframes menu-color {
+  from {
+    -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3); }
+  to {
+    -webkit-box-shadow: 0 3px 10px rgba(229, 73, 58, 0.3);
+            box-shadow: 0 3px 10px rgba(229, 73, 58, 0.3); } }
+@keyframes menu-color {
+  from {
+    -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3); }
+  to {
+    -webkit-box-shadow: 0 3px 10px rgba(229, 73, 58, 0.3);
+            box-shadow: 0 3px 10px rgba(229, 73, 58, 0.3); } }
   .header__logo {
     font-family: 'Kaushan Script';
     font-size: 28px;
@@ -879,8 +903,8 @@ p {
     height: 190px;
     border-radius: 10px;
     background: #252525;
-    -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
-            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 3px 5px rgba(149, 149, 149, 0.3);
+            box-shadow: 0 3px 5px rgba(149, 149, 149, 0.3);
     overflow: hidden;
     cursor: pointer;
     -webkit-transition: .2s linear;
@@ -919,7 +943,8 @@ p {
               box-shadow: 0 3px 10px rgba(229, 73, 58, 0.7); }
 
 .swiper-container {
-  padding: 10px !important; }
+  padding: 10px !important;
+  overflow: hidden !important; }
 
 .swiper-pagination {
   position: relative !important;
@@ -955,8 +980,8 @@ p {
     height: 270px;
     position: relative;
     cursor: pointer;
-    -webkit-box-shadow: 0 3px 10px rgba(149, 149, 149, 0.7);
-            box-shadow: 0 3px 10px rgba(149, 149, 149, 0.7);
+    -webkit-box-shadow: 0 3px 5px rgba(149, 149, 149, 0.7);
+            box-shadow: 0 3px 5px rgba(149, 149, 149, 0.7);
     -webkit-transition: .2s linear;
     transition: .2s linear; }
     .portfolio__item img {

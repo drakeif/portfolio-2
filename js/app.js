@@ -1,5 +1,5 @@
 var typed = new Typed('#typed', {
-    strings: ['Володимир <span>Олегович</span>', 'Я з Івано-<span>Франківська</span>', 'Володимир <span>Олегович</span>'],
+    strings: ['Володимир <span>Охлопков</span>', 'Я з Івано-<span>Франківська</span>', 'Володимир <span>Охлопков</span>'],
     showCursor: false,
     typeSpeed: 50,
     startDelay: 500,
@@ -36,6 +36,9 @@ orderSend.addEventListener('click', function(){
   setTimeout(function(){
     modal.classList.remove('active');
   }, 2000);
+  setTimeout(function(){
+    alert('Ай молодець!');
+  }, 2500);
 });
 
 orderSendEn.addEventListener('click', function(){
@@ -43,6 +46,9 @@ orderSendEn.addEventListener('click', function(){
   setTimeout(function(){
     modal.classList.remove('active');
   }, 2000);
+  setTimeout(function(){
+    alert('Well Done');
+  }, 2500);
 });
 
 // BURGER
@@ -76,16 +82,8 @@ en.addEventListener('click', (e) => {
   orderSend.style.display = "none"
   modalFormUa.style.display = "none"
   modalFormEn.style.display = "flex"
-  myWork.innerHTML = 'I`m making <span>web-sites</span> and <span>web-design</span>';
+  myWork.innerHTML = 'I make <span>web-sites</span> and <span>web-design</span>';
 });
-
-// AUDIO
-/* function poroh() {
-  var audio = new Audio();
-  audio.src = 'audio/vote.mp3';
-  audio.autoplay = true;
-}
- */
 
 
 

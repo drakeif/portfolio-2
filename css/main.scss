@@ -218,7 +218,7 @@ p {
     right: 0;
     bottom: 0;
     &__order {
-        padding: 20px 30px;
+        padding: 30px 30px;
         display: flex;
         position: relative;
         background: $bg;
@@ -232,17 +232,19 @@ p {
             height: 430px;
         }
         @include point (501) {
+            padding: 20px 20px;
             width: 300px;
             height: 360px;
         }
     }
     &__close {
         position: absolute;
-        top: -25px;
+        top: -35px;
         right: -50px;
         width: 35px;
-        height: 15px;
+        height: 35px;
         z-index: 10;
+        cursor: pointer;
         @include point(501) {
             top: -40px;
             right:0;
@@ -254,6 +256,7 @@ p {
             height: 1px;
             position: absolute;
             transition: .2s linear;
+            pointer-events: none;
             &:nth-child(1) {
                 top: 50%;
                 transform: rotate(45deg)
@@ -280,6 +283,10 @@ p {
             font-weight: 400;
             color: $accent;
             margin-bottom: 20px;
+            @include point (769) {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
             @include point (501) {
                 font-size: 18px;
                 margin-bottom: 10px;
@@ -287,10 +294,10 @@ p {
         }
         p {
             font-weight: 400;
-            margin-bottom: 25px;
-            @include point (501) {
+            margin-bottom: 30px;
+            @include point (769) {
                 font-size: 14px;
-                margin-bottom: 15px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -299,12 +306,13 @@ p {
         flex-direction: column;
         row-gap: 10px;
         margin-bottom: 20px;
+        max-width: 100%;
         input {
             padding: 10px 20px;
             border: 1px solid rgba($second, 1);
             outline: none;
             border-radius: 5px;
-
+            width: 100%;
             font-family: 'Montserrat', sans-serif;
             font-size: 14px;
             font-weight: 400;
@@ -312,12 +320,6 @@ p {
             transition: .2s linear;
             &:hover, &:focus {
                 border: 1px solid rgba($accent, 1);
-            }
-            @include point(769) {
-                max-width: 340px;
-            }
-            @include point(501) {
-                max-width: 240px;
             }
             &::placeholder {
                 font-family: 'Ubuntu', sans-serif;
@@ -337,6 +339,7 @@ p {
         }
         button {
             padding: 15px 30px;
+            width: 220px;
             background: transparent;
             border: 2px solid $accent;
             border-radius: 5px;
@@ -350,6 +353,10 @@ p {
             &:hover, &:focus {
                 color: $wh;
                 background: $accent;
+            }
+            @include point(769) {
+                padding: 10px 15px;
+                width: 100%;
             }
             @include point(501) {
                 padding: 5px 10px;

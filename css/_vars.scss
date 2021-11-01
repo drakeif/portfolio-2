@@ -12,22 +12,21 @@ $black: #000000;
     flex-direction: column;
     row-gap: 10px;
     margin-bottom: 20px;
+    max-width: 100%;
     input {
         padding: 10px 20px;
         border: 1px solid rgba($second, .3);
         outline: none;
         border-radius: 5px;
-
+        width: 100%;
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 400;
         color: $accent;
-        @include point(769) {
-            max-width: 340px;
-        }
-        @include point(501) {
-            max-width: 240px;
-        }
+        transition: .2s linear;
+            &:hover, &:focus {
+                border: 1px solid rgba($accent, 1);
+            }
         &::placeholder {
             font-family: 'Ubuntu', sans-serif;
             font-size: 13px;

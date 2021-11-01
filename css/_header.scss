@@ -7,12 +7,21 @@
         padding: 20px;
         background-color: $bg;
         border-radius: 10px;
-        box-shadow: 0 3px 10px rgba($text, .3);
+        box-shadow: 0 3px 10px rgba($second, .3);
 
         display: flex;
         align-items: center;
+        animation: menu-color 3s infinite alternate linear;
         @include point(501) {
             padding: 10px;
+        }
+    }
+    @keyframes menu-color {
+        from {
+            box-shadow: 0 3px 10px rgba($text, .3);
+        }
+        to {
+            box-shadow: 0 3px 10px rgba($accent, .3);
         }
     }
     &__logo {
